@@ -5,10 +5,10 @@ setup:
 	. .venv/bin/activate && pip install -r requirements.txt
 
 demo:
-	. .venv/bin/activate && python pipelines/pipeline.py
+	python3 pipelines/pipeline.py --mode demo
 
 test:
-	. .venv/bin/activate && pytest -q
+	TEST_MODE=demo python3 tests/run_tests.py
 
 clean:
-	rm -rf .venv data/processed
+	rm -rf .venv artifacts

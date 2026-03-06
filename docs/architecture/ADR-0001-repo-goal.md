@@ -7,5 +7,5 @@ This repository is a portfolio-grade, runnable reference implementation. It prio
 - secure-by-default habits
 
 ## Non-goals
-- Building a full production system
-- Vendor-specific implementations that require real credentials
+- Building a full production fleet manager
+- Making host changes automatically (this repo validates and documents; it does not mutate your servers)

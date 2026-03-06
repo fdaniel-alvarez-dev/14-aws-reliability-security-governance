@@ -6,13 +6,17 @@ Goal: identify likely risks early and make secure defaults cheap.
 - source code and CI workflows
 - infrastructure definitions (IaC)
 - operational artifacts (runbooks, dashboards)
+- system configuration baselines (e.g., SSH hardening)
 
 ## Threats (examples)
 - leaked secrets via git history
 - over-privileged CI tokens
 - misconfigured infrastructure (public exposure)
+- insecure SSH configuration (weak auth, root login)
+- configuration drift over time (snowflake servers)
 
 ## Mitigations implemented in this repo
 - secret scanning in CI
 - `.gitignore` for sensitive/local artifacts
 - minimal, runnable examples that do not require real credentials
+- guarded production checks to prevent accidental host probing without opt-in

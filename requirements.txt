@@ -1,4 +1,2 @@
-pandas==2.2.3
-pyarrow==18.0.0
-pandera==0.20.4
-pytest==8.3.3
+# Demo mode is intentionally dependency-free (stdlib only).
+# Production checks may optionally parse system config files without extra packages.
